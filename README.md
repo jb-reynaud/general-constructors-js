@@ -14,9 +14,12 @@ $ yarn generate
 ```
 
 ## Links
+
 ### Tools
+
 - [BootstrapVue](https://bootstrap-vue.org/)
 - [AOS](https://michalsnik.github.io/aos/)
 
 ### Inspiration
+
 - [StartBootstrapAgency](https://github.com/StartBootstrap/startbootstrap-agency)

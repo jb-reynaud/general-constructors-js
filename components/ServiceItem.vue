@@ -14,15 +14,15 @@ export default {
   props: {
     icon: {
       type: String,
-      required: true
+      required: true,
     },
     heading: {
       type: String,
-      required: true
+      required: true,
     },
     subheading: {
       type: String,
-      required: true
+      required: true,
     },
   },
 }

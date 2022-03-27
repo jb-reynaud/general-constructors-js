@@ -2,8 +2,12 @@
   <header class="masthead">
     <div class="container">
       <div class="masthead-subheading">J&S CONSTRUCTION</div>
-      <div class="masthead-heading text-uppercase">Residential & Commercial</div>
-      <b-button size="lg" squared variant="secondary" href="#services">Tell Me More</b-button>
+      <div class="masthead-heading text-uppercase">
+        Residential & Commercial
+      </div>
+      <b-button size="lg" squared variant="secondary" href="#services"
+        >Tell Me More</b-button
+      >
     </div>
   </header>
 </template>
@@ -14,7 +18,7 @@
   padding-bottom: 6rem;
   text-align: center;
   color: #877765;
-  text-shadow: 1px 1px 2px #1D1D1D, 0 0 25px #1D1D1D, 0 0 5px #1D1D1D;
+  text-shadow: 1px 1px 2px #1d1d1d, 0 0 25px #1d1d1d, 0 0 5px #1d1d1d;
   background-image: url('~/assets/images/header.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
