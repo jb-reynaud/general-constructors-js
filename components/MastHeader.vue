@@ -32,7 +32,7 @@
     margin-bottom: 25px;
   }
   .masthead-heading {
-    font-size: 3.25rem;
+    font-size: 2.5rem;
     font-weight: 700;
     line-height: 3.25rem;
     margin-bottom: 2rem;
