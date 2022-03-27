@@ -152,19 +152,27 @@
           <b-col class="text-center">
             <h2>Contact us</h2>
             <h3 class="section-subheading text-muted">
-              Lorem ipsum dolor sit amet consectetur.
+              Call us or send us an email, we can help you to realize your nez project!
             </h3>
           </b-col>
         </b-row>
-        <b-row>
+        <b-row class="text-center">
           <b-col>
-            <contact-form />
+            <b-button href="mailto:jbaptiste@gmail.com?subject=NewContact" variant="secondary" squared size="lg">
+              <b-icon icon="envelope"></b-icon>
+              jbaptiste@gmail.com
+            </b-button>
+          </b-col>
+          <b-col>
+            <b-button href="tel:060606006" variant="secondary" squared size="lg">
+              <b-icon icon="telephone"></b-icon>
+              060606006</b-button>
           </b-col>
         </b-row>
       </b-container>
     </section>
 
-    <footer>
+    <footer class="text-center p-4">
       <span>
         Copyright © General constructors {{ new Date().getFullYear() }}
       </span>
