@@ -176,8 +176,11 @@
       <span>
         Copyright © General constructors {{ new Date().getFullYear() }}
       </span>
-      <b-icon icon="instagram" variant="success"></b-icon>
     </footer>
+
+    <span class="instagram">
+      <a href="https://instagram.com"><b-icon icon="instagram" variant="secondary"></b-icon></a>
+    </span>
   </div>
 </template>
 
@@ -277,5 +280,16 @@ html {
       transform: translateX(0);
     }
   }
+}
+
+.instagram {
+  background-color: #1d1d1d;
+  position: fixed;
+  top: 100px;
+  font-size: 30px;
+  padding: 5px 10px 2px 10px;
+  border-radius: 0 8px 8px 0;
+  border: 1px solid #877765;
+  left: 0;
 }
 </style>
