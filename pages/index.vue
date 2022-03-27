@@ -57,7 +57,7 @@
               determine the parameters and specs of your project and bid
               accordingly.
             </p>
-            <ul class="list-unstyled">
+            <ul class="list-unstyled ml-4">
               <li><b-icon icon="check" variant="success" /> Vast Experience</li>
               <li>
                 <b-icon icon="check" variant="success" /> Professional Team
@@ -68,15 +68,16 @@
                 Accountable
               </li>
             </ul>
-            <b-button squared href="#projects">See some projects</b-button>
+            <div class="text-center mb-4">
+              <b-button squared href="#projects">See some projects</b-button>
+            </div>
           </b-col>
           <b-col md="6">
             <b-img
               src="~/assets/images/about-us.jpg"
               fluid
               alt="Truck"
-              class="shadow"
-              data-aos="fade-left"
+              data-aos="truck-animation"
             />
           </b-col>
         </b-row>
@@ -233,6 +234,23 @@ html {
   .bg-secondary {
     background-color: #877765;
     background-image: linear-gradient(135deg, #54a6ff 0%, #dcd7c0 100%);
+  }
+}
+
+[data-aos="truck-animation"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    opacity: 1;
+  }
+
+  @media screen and (min-width: 768px) {
+    transform: translateX(100px);
+
+    &.aos-animate {
+      transform: translateX(0);
+    }
   }
 }
 </style>
