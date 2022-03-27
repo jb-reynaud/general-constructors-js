@@ -18,49 +18,21 @@
     </div>
     <b-modal :id="modalId" size="lg" centered :title="heading" hide-footer>
       <b-carousel
-        id="carousel-1"
-        v-model="slide"
+        :id="modalId"
+        v-model="currentSlide"
         :interval="4000"
         controls
         indicators
-        background="#ababab"
-        img-width="1024"
+        background="#000"
+        img-width="620"
         img-height="480"
         style="text-shadow: 1px 1px 2px #333"
-        @sliding-start="onSlideStart"
-        @sliding-end="onSlideEnd"
       >
-        <!-- Slides with custom text -->
         <b-carousel-slide
-          caption="First slide"
-          text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-          :img-src="require('~/assets/images/portfolio/1/roof.jpg')"
-        >
-          <h1>Hello world!</h1>
-        </b-carousel-slide>
-        <b-carousel-slide
-          caption="First slide"
-          text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-          :img-src="require('~/assets/images/portfolio/1/floor.jpg')"
-        >
-          <h1>Hello world!</h1>
-        </b-carousel-slide>
-        <b-carousel-slide
-          caption="First slide"
-          text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-          :img-src="require('~/assets/images/portfolio/1/all.jpg')"
-        >
-          <h1>Hello world!</h1>
-        </b-carousel-slide>
-
-        <!-- Slide with blank fluid image to maintain slide aspect ratio -->
-        <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            eros felis, tincidunt a tincidunt eget, convallis vel est. Ut
-            pellentesque ut lacus vel interdum.
-          </p>
-        </b-carousel-slide>
+          v-for="slide in slides"
+          :key="slide.img"
+          :img-src="slide.img"
+        />
       </b-carousel>
     </b-modal>
   </b-col>
@@ -81,23 +53,18 @@ export default {
       type: String,
       required: true,
     },
+    slides: {
+      type: Array,
+      required: true,
+    }
   },
   data() {
     return {
       showOverlay: false,
       modalId: `portfolioItemModal${this._uid}`,
-      slide: 0,
-      sliding: null,
+      currentSlide: 0
     }
-  },
-  methods: {
-    onSlideStart(slide) {
-      this.sliding = true
-    },
-    onSlideEnd(slide) {
-      this.sliding = false
-    },
-  },
+  }
 }
 </script>
 

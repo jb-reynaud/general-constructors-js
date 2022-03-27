@@ -140,6 +140,7 @@
             :image-src="portfolioItem.img"
             :heading="portfolioItem.heading"
             :subheading="portfolioItem.subheading"
+            :slides="portfolioItem.carrouselSlides"
           />
         </b-row>
       </b-container>
@@ -182,16 +183,32 @@ export default {
           heading: 'Pavilion in Hinsdale, IL',
           subheading: 'Lorem Ipsum',
           img: require('~/assets/images/portfolio/1/all.jpg'),
+          carrouselSlides: [
+            { img: require('~/assets/images/portfolio/1/all.jpg') },
+            { img: require('~/assets/images/portfolio/1/floor.jpg') },
+            { img: require('~/assets/images/portfolio/1/roof.jpg') },
+          ],
         },
         {
           heading: "The Streamling's house",
           subheading: 'Lorem Ipsum',
           img: require('~/assets/images/portfolio/2/desk.jpg'),
+          carrouselSlides: [
+            { img: require('~/assets/images/portfolio/2/desk.jpg') },
+            { img: require('~/assets/images/portfolio/2/fire-place.jpg') },
+            { img: require('~/assets/images/portfolio/2/living-room.jpg') },
+          ],
         },
         {
           heading: 'House in Olympia fields, IL',
           subheading: 'Lorem Ipsum',
           img: require('~/assets/images/portfolio/3/kitchen.jpg'),
+          carrouselSlides: [
+            { img: require('~/assets/images/portfolio/3/kitchen.jpg') },
+            { img: require('~/assets/images/portfolio/3/room.jpg') },
+            { img: require('~/assets/images/portfolio/3/stairs.jpg') },
+            { img: require('~/assets/images/portfolio/3/tube.jpg') },
+          ],
         },
       ],
     }
